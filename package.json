@@ -20,7 +20,7 @@
     "nextjs-google-analytics": "^2.3.3",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.33.3",
+    "sharp": "^0.33.4",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
