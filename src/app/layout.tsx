@@ -29,7 +29,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Analytics />
-        {children}
+        <main className="bg-foxOrange h-full w-full flex flex-col">
+          {children}
+        </main>
       </body>
     </html>
   );
