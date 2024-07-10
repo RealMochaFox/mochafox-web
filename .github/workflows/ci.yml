@@ -18,6 +18,9 @@ jobs:
       - name: Install yarn 4
         run: corepack prepare yarn@4.3.1
 
+      - name: show dir
+        run: ls -lah
+
       - name: Add node-gyp
         run: yarn global add node-gyp
 
