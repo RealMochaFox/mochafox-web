@@ -21,8 +21,8 @@ jobs:
       - name: show dir
         run: ls -lah
 
-      - name: Add node-gyp
-        run: yarn global add node-gyp
+      # - name: Add node-gyp
+      #   run: yarn global add node-gyp
 
       - name: Install modules
         run: yarn --immutable
