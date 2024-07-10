@@ -14,10 +14,10 @@ import Footer from "@/components/nav/footer"
 import Card from "@/components/card"
 import SocialCard from "@/components/social-card"
 import ArtistCard from "@/components/artist-card"
-export default function Home() {
+export default function Page() {
 
   return (
-    <main className="bg-foxOrange h-full w-full flex flex-col">
+    <>
       <Header/>
       <Hero/>
       
@@ -27,6 +27,7 @@ export default function Home() {
 
           <div className="xl:col-start-2 xl:col-span-3">
             <Image
+              unoptimized
               src={ImageScrunglyFox}
               alt="A crudely drawn MochaFox sits, looking head empty. A flashing arrow points at him, calling him scrungly."
               className="float-right rounded mt-1 mr-2 w-3/5 sm:w-3/5 md:w-2/4 lg:w-1/4 max-w-60 xl:min-w-60"
@@ -127,6 +128,6 @@ export default function Home() {
       </section>
 
       <Footer/>
-    </main>
+    </>
   );
 }
