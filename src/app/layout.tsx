@@ -3,9 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Script from "next/script";
 config.autoAddCss = false;
-
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +29,11 @@ export default function RootLayout({
           {children}
         </main>
       </body>
-      <GoogleAnalytics gaId="G-9829CEMHW8" />
+      <Script
+        src="https://u.crust.monster/e45e75e27812"
+        data-website-id="25a50dcf-3f9a-4dab-b6d6-41ece4608ee1"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
