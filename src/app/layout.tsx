@@ -4,6 +4,8 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Script from "next/script";
+import Header from "@/components/nav/header";
+import Footer from "@/components/nav/footer";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="bg-foxOrange h-full w-full flex flex-col">
+          <Header />
           {children}
+          <Footer />
         </main>
       </body>
       <Script

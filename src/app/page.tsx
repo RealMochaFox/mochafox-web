@@ -12,17 +12,33 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import Header from "@/components/nav/header";
-import Hero from "@/components/hero";
-import Footer from "@/components/nav/footer";
 import Card from "@/components/card";
 import SocialCard from "@/components/social-card";
 import ArtistCard from "@/components/artist-card";
+import warmFox from "../../public/warm.jpg";
+
 export default function Page() {
   return (
     <>
-      <Header />
-      <Hero />
+      <section
+        id="hero"
+        className="sm:flex-row items-center justify-center sm:p-20 md:h-full space-x-4 bg-foamWhite"
+      >
+        <Image
+          src={warmFox}
+          alt="MochaFox drinking a cup of coffee and wearing a scarf"
+          className="w-full sm:w-1/2 lg:w-1/3 block max-w-96"
+        />
+
+        <div className="flex flex-col">
+          <h1 className="text-center sm:text-left text-3xl sm:text-4xl text-darkRoast">
+            Hi, I&apos;m MochaFox!
+          </h1>
+          <p className="sm:text-xl md:text-2xl text-foxOrange">
+            Welcome to my little corner of the internet
+          </p>
+        </div>
+      </section>
 
       <section>
         <div className="xl:grid xl:grid-cols-5">
@@ -145,8 +161,6 @@ export default function Page() {
           />
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

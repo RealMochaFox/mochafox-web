@@ -1,9 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import {
-  faDrumstickBite,
-  faHandsPraying,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBluesky } from "@fortawesome/free-brands-svg-icons";
+import { faHandsPraying } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
@@ -20,14 +17,6 @@ export default function Footer() {
           >
             <FontAwesomeIcon icon={faBluesky} />
             <span className="sr-only">BlueSky page</span>
-          </a>
-          <a
-            target="_blank"
-            href="https://mcchickers.com"
-            className="text-darkRoast"
-          >
-            <FontAwesomeIcon icon={faDrumstickBite} />
-            <span className="sr-only">McChickers</span>
           </a>
           <a
             target="_blank"
