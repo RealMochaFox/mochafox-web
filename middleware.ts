@@ -8,6 +8,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(new URL('/projects', request.url))
   }
 
+  // Handle scan subdomain
+  if (hostname.startsWith('scan.')) {
+    return NextResponse.rewrite(new URL('/scan', request.url))
+  }
+
   return NextResponse.next()
 }
 
