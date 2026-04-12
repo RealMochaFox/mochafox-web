@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   console.log(request.nextUrl)
   console.log(request.url)
   const hostname = request.headers.get('host') || ''

@@ -28,6 +28,7 @@ export default function Page() {
           src={warmFox}
           alt="MochaFox drinking a cup of coffee and wearing a scarf"
           className="w-full sm:w-1/2 lg:w-1/3 block max-w-96"
+          loading="eager"
         />
 
         <div className="flex flex-col">

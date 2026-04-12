@@ -6,34 +6,38 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "true"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "next": "^15.4.8",
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "sharp": "^0.34.3"
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.0",
+    "next": "^16.2.3",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "sharp": "^0.34.5"
+  },
+  "engines": {
+    "node": ">=24"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.4.6",
+    "@eslint/eslintrc": "^3.3.5",
+    "@types/node": "^25",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.3",
     "postcss": "^8",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5"
+    "postcss-import": "^16.1.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6"
   },
-  "packageManager": "yarn@4.3.1",
   "overrides": {
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7"
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
